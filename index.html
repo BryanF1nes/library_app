@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <label for="title">Title</label>
-      <input type="text" name="title" id="title" />
-      <label for="author">Author</label>
-      <input type="text" name="author" id="author" />
-      <label for="pages">Pages</label>
-      <input type="number" name="pages" id="pages" />
-      <label for="read">Read</label>
-      <input type="checkbox" name="read" id="read" />
-      <button type="submit">Submit</button>
-    </form>
+    <nav>
+      <h4>The Library</h4>
+      <button class="add-books">Add a book</button>
+    </nav>
+    <div class="form-modal off">
+      <div>
+        <h3>Add A Book</h3>
+        <div class="close">X</div>
+      </div>
+      <form>
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <input type="text" name="author" id="author" placeholder="Author" />
+        <input type="number" name="pages" id="pages" placeholder="Pages" />
+        <div>
+          <label for="read">Read</label>
+          <input type="checkbox" name="read" id="read" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
 
-    <div id="root"></div>
+    <div id="root" class="blur"></div>
+
+    <footer>
+      <h5>&copy; Bryan Fines</h5>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
